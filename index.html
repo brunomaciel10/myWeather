@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myWeather</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/icons/nuvem.png" type="image/x-icon">
+</head>
+<body>
+
+    <div class="container">
+        <div class="container--title">
+            Seja bem-vindo ao <span>myWeather</span>
+        </div>
+        <div class="container--desc">
+            Escolha um local para ver a previsão do tempo
+        </div>
+        <div class="container--search">
+            <form class="busca">
+                <input type="search" class="searchInput" placeholder="Digite uma cidade">
+                <button>Buscar</button>
+            </form>
+        </div>
+
+        <div class="c-loader hidden"></div>
+
+        <!---->
+        <div class="infos hidden">
+            <div class="temp">
+                <p class="city">Campos do Jordão - SP</p>
+                <div class="info--temp">    
+                    <span class="temp--atual">14°c</span>
+                    <span class="temp--min--max">9°c / 17°c</span>
+                    <span class="temp--desc">Algumas nuvens</span>
+                </div>
+            </div>
+            <div class="temp--icon">
+                <img class="icon" src="http://openweathermap.org/img/wn/10d@2x.png">
+            </div>
+        </div>
+
+        <div class="more--infos hidden">
+            <div class="vento">
+                <div class="title">
+                    <img src="assets/icons/vento.png">
+                    <p>Velocidade do vento</p>
+                </div>
+                <span class="speedVento">---</span>
+            </div>
+            <div class="umidade">
+                <div class="title">
+                    <img src="assets/icons/umidade.png">
+                    <p>Umidade</p>
+                </div>
+                <span class="valorUmidade">---</span>
+            </div>
+            <div class="sensacao--term">
+                <div class="title">
+                    <img src="assets/icons/termometro.png">
+                    <p>Sensação térmica</p>
+                </div>
+                <span class="sencTermica">---</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
